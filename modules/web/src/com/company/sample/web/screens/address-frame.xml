@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.sample.web.screens.AddressFrame"
+        messagesPack="com.company.sample.web.screens">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <hbox id="labelBox"
+              spacing="true">
+            <label id="label"
+                   value="some value"/>
+            <button id="editBtn"
+                    caption="Edit"
+                    invoke="onEditBtnClick"/>
+        </hbox>
+        <hbox id="fieldsBox"
+              spacing="true"
+              visible="false">
+            <textField id="line1Field"/>
+            <textField id="line2Field"/>
+            <textField id="cityField"/>
+            <textField id="zipField"/>
+        </hbox>
+    </layout>
+</window>
